@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<script>
+			function soma(){
+				var n1 = Number(document.getElementById("Nr1").value);
+				var n2 = Number(document.getElementById("Nr2").value);
+				var r;
+				r = (n1+n2);
+				
+				var saida = document.getElementById("saida");
+				saida.innerText = "Soma: " + r;
+			}
+			
+			function subtracao(){
+				var n1 = Number(document.getElementById("Nr1").value);
+				var n2 = Number(document.getElementById("Nr2").value);
+				var r;
+				r = (n1-n2);
+				
+				var saida = document.getElementById("saida");
+				saida.innerText = "Subtração: " + r;
+			}
+			
+			function multiplicacao(){
+				var n1 = Number(document.getElementById("Nr1").value);
+				var n2 = Number(document.getElementById("Nr2").value);
+				var r;
+				r = (n1*n2);
+				
+				var saida = document.getElementById("saida");
+				saida.innerText = "Multiplicação: " + r;
+			}
+			
+			function divisao(){
+				var n1 = Number(document.getElementById("Nr1").value);
+				var n2 = Number(document.getElementById("Nr2").value);
+				var r;
+				r = (n1/n2);
+				
+				var saida = document.getElementById("saida");
+				saida.innerText = "Divisão: " + r;
+			}
+		</script>
+	
+	</head>
+	
+	<body>
+		<h1>Calculadora Simples<h1>
+	
+		<input type="text" id="Nr1" value="Nr1"/>
+		<input type="text" id="Nr2"/>
+		
+		<input type="button" value="+" onclick="soma()"/>
+		<input type="button" value="-" onclick="subtracao()"/>
+		<input type="button" value="*" onclick="multiplicacao()"/>
+		<input type="button" value="/" onclick="divisao()"/>
+		<br>
+		<label id="saida"></label>
+	</body>
+</html>
